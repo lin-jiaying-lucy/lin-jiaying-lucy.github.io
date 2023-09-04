@@ -73,65 +73,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-parking sensor" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/08/31/parking%20sensor/" class="article-date">
-  <time class="dt-published" datetime="2023-08-31T12:14:45.000Z" itemprop="datePublished">2023-08-31</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/08/31/parking%20sensor/">parking sensor</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="Design-of-a-parking-sensor"><a href="#Design-of-a-parking-sensor" class="headerlink" title="Design of a parking sensor"></a>Design of a parking sensor</h1><h2 id="A-general-introduction-of-my-design"><a href="#A-general-introduction-of-my-design" class="headerlink" title="A general introduction of my design"></a>A general introduction of my design</h2><p>I designed a simple Parking sensor. The entire process of document production involves first searching for open source code online, then purchasing components, wiring the code, and finally understanding the code and making some minor modifications. </p>
-<p>When the distance between the radar and the obstacle is less than 50cm, the buzzer will sound and the red LED light on the nano will flash. LCD1602 screen will display distance and Progress bar. When the distance is less than 50cm, the screen will display ‘DANGER’, and when the distance is more than 100cm, it will display ‘OK’</p>
-<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pPrYzjI"><img src="https://s1.ax1x.com/2023/09/04/pPrYzjI.jpg" alt="pPrYzjI.jpg"></a></p>
-<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pPrYxgA"><img src="https://s1.ax1x.com/2023/09/04/pPrYxgA.jpg" alt="pPrYxgA.jpg"></a></p>
-<p>Unfortunately, the photos were not taken completely and no obstacles were found</p>
-<h2 id="Reasons-for-doing-this-project"><a href="#Reasons-for-doing-this-project" class="headerlink" title="Reasons for doing this project"></a>Reasons for doing this project</h2><p>Recently, I have been very interested in the Arduino platform. I heard that it is an easy to learn and open source platform. This is very friendly and suitable for beginners like me, and I can implement some creative projects through Arduino. I bought a book to learn Arduino, and then I plan to practice some knowledge by making a Parking sensor with Arduino.</p>
-<h2 id="A-specific-introduction-of-each-part"><a href="#A-specific-introduction-of-each-part" class="headerlink" title="A specific introduction of each part"></a>A specific introduction of each part</h2><p><a target="_blank" rel="noopener" href="https://imgse.com/i/pPrtput"><img src="https://s1.ax1x.com/2023/09/04/pPrtput.jpg" alt="pPrtput.jpg"></a></p>
-<h3 id="Hardware"><a href="#Hardware" class="headerlink" title="Hardware"></a>Hardware</h3><p><em><strong>Ultrasonic ranging:</strong></em></p>
-<p>In junior high school physics, ultrasound can be used for ranging. In this project, I found open source code online. Then I learned through reading the code that the TRIG pin of the ultrasound module is connected to the 5th pin of the nano, and the ECHO is connected to the 6th pin.</p>
-<p><em><strong>LCD</strong></em></p>
-<p>I learned from the book that the SDA on the LDC is a data cable connected to the A4 of the nano. SCL is the clock line, connected to the A5 of the nano. </p>
-<p>When I connected the cable and passed the program into Arduino, I found that the LCD screen was on, but there was no data display at all. I went from coding to wiring inspection. Finally, I found that because of the contrast problem, after adjusting the Potentiometer with a screwdriver, the words on the screen were displayed successfully. This is too funny!</p>
-<p><em><strong>Buzzer</strong></em></p>
-<p>This is a simple little thing, just connect its positive pole to 12. But I was too careless. I confused the 12 on the Breadboard with the 12 on the nano. Fortunately, I soon realized this problem</p>
-<h3 id="software"><a href="#software" class="headerlink" title="software"></a>software</h3><p><a target="_blank" rel="noopener" href="https://imgse.com/i/pPrYHHK"><img src="https://s1.ax1x.com/2023/09/04/pPrYHHK.png" alt="pPrYHHK.png"></a></p>
-<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pPrYLND"><img src="https://s1.ax1x.com/2023/09/04/pPrYLND.png" alt="pPrYLND.png"></a></p>
-<p><em><strong>The above two images are source code, and I have made some Chinese annotations on them after understanding them. The following image is a modification I made to the display of the LCD screen.</strong></em></p>
-<p><em><strong>The display screen is the first line in common sense, and the 0th line in programming. This point needs to be noted</strong></em></p>
-<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pPrYj9H"><img src="https://s1.ax1x.com/2023/09/04/pPrYj9H.png" alt="pPrYj9H.png"></a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/08/31/parking%20sensor/" data-id="clm4zukfe0000uwiq09m1f7sv" data-title="parking sensor" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/arduino/" rel="tag">arduino</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
     <article id="post-Markdown语法介绍" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/10/03/Markdown%E8%AF%AD%E6%B3%95%E4%BB%8B%E7%BB%8D/" class="article-date">
@@ -296,6 +237,65 @@
 
 
   
+    <article id="post-parking sensor" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/10/03/parking%20sensor/" class="article-date">
+  <time class="dt-published" datetime="2022-10-03T12:14:45.000Z" itemprop="datePublished">2022-10-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/10/03/parking%20sensor/">parking sensor</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Design-of-a-parking-sensor"><a href="#Design-of-a-parking-sensor" class="headerlink" title="Design of a parking sensor"></a>Design of a parking sensor</h1><h2 id="A-general-introduction-of-my-design"><a href="#A-general-introduction-of-my-design" class="headerlink" title="A general introduction of my design"></a>A general introduction of my design</h2><p>I designed a simple Parking sensor. The entire process of document production involves first searching for open source code online, then purchasing components, wiring the code, and finally understanding the code and making some minor modifications. </p>
+<p>When the distance between the radar and the obstacle is less than 50cm, the buzzer will sound and the red LED light on the nano will flash. LCD1602 screen will display distance and Progress bar. When the distance is less than 50cm, the screen will display ‘DANGER’, and when the distance is more than 100cm, it will display ‘OK’</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pPrYzjI"><img src="https://s1.ax1x.com/2023/09/04/pPrYzjI.jpg" alt="pPrYzjI.jpg"></a></p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pPrYxgA"><img src="https://s1.ax1x.com/2023/09/04/pPrYxgA.jpg" alt="pPrYxgA.jpg"></a></p>
+<p>Unfortunately, the photos were not taken completely and no obstacles were found</p>
+<h2 id="Reasons-for-doing-this-project"><a href="#Reasons-for-doing-this-project" class="headerlink" title="Reasons for doing this project"></a>Reasons for doing this project</h2><p>Recently, I have been very interested in the Arduino platform. I heard that it is an easy to learn and open source platform. This is very friendly and suitable for beginners like me, and I can implement some creative projects through Arduino. I bought a book to learn Arduino, and then I plan to practice some knowledge by making a Parking sensor with Arduino.</p>
+<h2 id="A-specific-introduction-of-each-part"><a href="#A-specific-introduction-of-each-part" class="headerlink" title="A specific introduction of each part"></a>A specific introduction of each part</h2><p><a target="_blank" rel="noopener" href="https://imgse.com/i/pPrtput"><img src="https://s1.ax1x.com/2023/09/04/pPrtput.jpg" alt="pPrtput.jpg"></a></p>
+<h3 id="Hardware"><a href="#Hardware" class="headerlink" title="Hardware"></a>Hardware</h3><p><em><strong>Ultrasonic ranging:</strong></em></p>
+<p>In junior high school physics, ultrasound can be used for ranging. In this project, I found open source code online. Then I learned through reading the code that the TRIG pin of the ultrasound module is connected to the 5th pin of the nano, and the ECHO is connected to the 6th pin.</p>
+<p><em><strong>LCD</strong></em></p>
+<p>I learned from the book that the SDA on the LDC is a data cable connected to the A4 of the nano. SCL is the clock line, connected to the A5 of the nano. </p>
+<p>When I connected the cable and passed the program into Arduino, I found that the LCD screen was on, but there was no data display at all. I went from coding to wiring inspection. Finally, I found that because of the contrast problem, after adjusting the Potentiometer with a screwdriver, the words on the screen were displayed successfully. This is too funny!</p>
+<p><em><strong>Buzzer</strong></em></p>
+<p>This is a simple little thing, just connect its positive pole to 12. But I was too careless. I confused the 12 on the Breadboard with the 12 on the nano. Fortunately, I soon realized this problem</p>
+<h3 id="software"><a href="#software" class="headerlink" title="software"></a>software</h3><p><a target="_blank" rel="noopener" href="https://imgse.com/i/pPrYHHK"><img src="https://s1.ax1x.com/2023/09/04/pPrYHHK.png" alt="pPrYHHK.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pPrYLND"><img src="https://s1.ax1x.com/2023/09/04/pPrYLND.png" alt="pPrYLND.png"></a></p>
+<p><em><strong>The above two images are source code, and I have made some Chinese annotations on them after understanding them. The following image is a modification I made to the display of the LCD screen.</strong></em></p>
+<p><em><strong>The display screen is the first line in common sense, and the 0th line in programming. This point needs to be noted</strong></em></p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pPrYj9H"><img src="https://s1.ax1x.com/2023/09/04/pPrYj9H.png" alt="pPrYj9H.png"></a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/10/03/parking%20sensor/" data-id="clm4zukfe0000uwiq09m1f7sv" data-title="parking sensor" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/a-r-d-u-in-o/" rel="tag">a r d u in o</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
 
 
 </section>
@@ -309,7 +309,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/arduino/" rel="tag">arduino</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/a-r-d-u-in-o/" rel="tag">a r d u in o</a></li></ul>
     </div>
   </div>
 
@@ -319,7 +319,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/arduino/" style="font-size: 10px;">arduino</a>
+      <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/a-r-d-u-in-o/" style="font-size: 10px;">a r d u in o</a>
     </div>
   </div>
 
@@ -328,7 +328,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li></ul>
     </div>
   </div>
 
@@ -341,11 +341,11 @@
       <ul>
         
           <li>
-            <a href="/2023/08/31/parking%20sensor/">parking sensor</a>
+            <a href="/2022/10/03/Markdown%E8%AF%AD%E6%B3%95%E4%BB%8B%E7%BB%8D/">Markdown语法介绍</a>
           </li>
         
           <li>
-            <a href="/2022/10/03/Markdown%E8%AF%AD%E6%B3%95%E4%BB%8B%E7%BB%8D/">Markdown语法介绍</a>
+            <a href="/2022/10/03/parking%20sensor/">parking sensor</a>
           </li>
         
       </ul>
